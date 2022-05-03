@@ -1,0 +1,7 @@
+1) Primero que nada modifique todo mi proyecto, a algo mas alcanzable y que el dia de mañana pueda utilizar.
+2)Agregue a todas las secciones la etique <meta name="keywords"> con las palabras Carpinteria, Maderas, Diseño, Muebles, Decoracion.
+3)Coloque diferentes <meta name="description"> a cada html.
+4)En cada html, coloque un title correspondiente a la seccion la cual visita.
+5)Respete la jerarquia de los h1, h2, etc.
+6)Cada html tiene su h1 general para todos, y sus h2 referidos a la seccion que visita.
+7)Cree un sitemap xml.
