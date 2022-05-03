@@ -1,0 +1,41 @@
+/* Configuracion Galeria de Productos */
+
+@mixin media-querie($breackpoint){
+    @media (min-width: map-get($breackpoints, $breackpoint)){
+        @content;
+    }
+}
+.galeria-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+    @include media-querie(sm){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-querie(lg){
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    &:hover{
+        transform: rotateY(180deg);
+    }
+}
+.galeria-item{
+    position: relative;
+}
+.galeria-title{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 2.5px;
+    opacity: 0.5;
+}

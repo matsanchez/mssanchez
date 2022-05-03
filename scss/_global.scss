@@ -1,0 +1,24 @@
+/* Selectores Globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    background-color: $primarycolor;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+.card-title{
+    background-color: $primarycolor;
+    text-align: center;
+    padding: 10px
+}
+.card{
+    @extend .card-title;
+    background-color: $secondcolor;
+}
+/* Fin selectores globales */

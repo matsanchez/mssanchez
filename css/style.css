@@ -1,0 +1,215 @@
+/* Selectores Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  background-color: #FEDBD0;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.card-title, .card {
+  background-color: #FEDBD0;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  background-color: #FEEAE6;
+}
+
+/* Fin selectores globales */
+/* Configuracion Galeria de Productos */
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+@media (min-width: 600px) {
+  .galeria-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .galeria-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.galeria-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.galeria-img:hover {
+  transform: rotateY(180deg);
+}
+
+.galeria-item {
+  position: relative;
+}
+
+.galeria-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 2.5px;
+  opacity: 0.5;
+}
+
+/* Seccion Home */
+.home-grid {
+  display: grid;
+  grid-template-areas: "header" "navbar" "carousel" "slider" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 155px auto 1fr auto;
+}
+
+/* Encabezado Web */
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: #FEDBD0;
+}
+header h1 {
+  background-color: #442C2E;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/* Estilos del menu con Media Querie Responsive */
+nav {
+  grid-area: navbar;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+}
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    width: 100%;
+    padding: 16px;
+    text-align: left;
+  }
+}
+nav ul li:hover {
+  background-color: #FEEAE6;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #442C2E;
+}
+
+.hide {
+  font-size: 22px;
+  padding: 16px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 600px) {
+  .hide {
+    display: block;
+  }
+}
+
+/* Fin de estilos Menu */
+/* Banner Sustentable */
+.banner {
+  grid-area: slider;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+}
+
+/* Configuracion Pie de Pagina */
+footer {
+  grid-area: footer;
+  background-color: #442C2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+.iconSocialMedia {
+  width: 40px;
+  height: 40px;
+}
+
+/* Fin configuracion Pie de Pagina */
+/* Seccion Empresa */
+.empresa-grid {
+  display: grid;
+  grid-template-areas: "header" "navbar" "about" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 155px auto 1fr auto;
+}
+
+.empresa {
+  grid-area: about;
+}
+
+/* Titulos de todas las secciones */
+h2 {
+  color: #442C2E;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #FEEAE6;
+}
+
+/* Seccion Servicios */
+.servicios-grid {
+  display: grid;
+  grid-template-areas: "header" "navbar" "servicios" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 155px auto 1fr auto;
+}
+
+.servicios {
+  grid-area: servicios;
+}
+
+/* Seccion contacto */
+.contacto-grid {
+  display: grid;
+  grid-template-areas: "header" "navbar" "contacto" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 155px auto 1fr auto;
+}
+
+.btn {
+  background-color: #442C2E;
+  color: white;
+}
+.btn:hover {
+  color: #442C2E;
+  background-color: #FEEAE6;
+}
+
+/*# sourceMappingURL=style.css.map */

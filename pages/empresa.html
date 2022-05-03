@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Carpinteria, Maderas, Diseño, Muebles, Decoracion"><!-- SEO Palabras Claves -->
+    <meta name="description" content="Somos una empresa sustentable para el medio ambiente, reutilizamos la madera ya elaborada logrando muebles de calidad"><!-- SEO Descripcion del sitio -->
+    <link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon"><!-- Link Favicon -->
+    <link rel="icon" href="../img/icon/favicon.ico" type="image/x-icon"><!-- Link Favicon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!-- Link externo CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Link externo hoja de CSS Awesome -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"><!-- Hoja CSS del estilo de la pagina -->
+    <title>EMPRESA / MS Carpinteria Sustentable</title><!-- Titulo seccion pestaña -->
+</head>
+<body class="empresa-grid"><!-- Comienzo contenido GRID -->
+    <header><!-- Encabezado de la Web -->
+        <a href="../index.html"><img src="../img/logo.png" width="100"></a>
+        <h1>Carpinteria Sustentable</h1><!-- Titulo Principal -->
+    </header><!-- Fin encabezado -->
+    <nav><!-- Menu de Navegacion -->
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i>Menu
+            </div>
+    </nav><!-- Fin Menu Navegacion -->
+    <!-- Seccion About -->
+    <section class="empresa">
+        <h2>Sobre MS Carpinteria Sustentable</h2>
+        <div class="container cardsAlign mt-2">
+            <div>
+                <div class="card m-1" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../img/empresa.jpg" class="img-fluid" alt="Equipo de Trabajo">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-header">Como trabajamos</h5>
+                          <p class="textoCard">Contamos con un equipo de trabajo de excelente calidad y compromiso, asistiendolo en la toma de decision del producto correcto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card m-1" style="max-width: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-header">Somos sustentables</h5>
+                          <p class="textoCard">Año tras año, se talan miles de arboles con el fin de producir madera, nuestro objetivo es tratar de reducir este consumo, utilizando madera ya usada y reciclandola</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="../img/banner.jpg" class="img-fluid" alt="Compromiso">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </section>
+    <!-- Fin seccion About -->
+    <footer><!-- Comienzo Pie de Pagina -->
+        <span>TODOS LOS DERECHOS RESERVADOS 2022</span>
+        <!-- Iconos Media Socials -->
+        <img src="../img/socialmedia/facebook.png" class="iconSocialMedia" alt="Facebook">
+        <img src="../img/socialmedia/instagram.png" class="iconSocialMedia" alt="Instagram">
+        <img src="../img/socialmedia/twitter.png" class="iconSocialMedia" alt="Twitter">
+        <!-- Fin Iconos Media Socials -->
+    </footer><!-- Fin Pie de pagina -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><!-- Link externo JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- Link externo JS Jquerie -->
+    <!-- Script Configuracion Menu Hamburguesa -->
+    <script>
+        $(".hide").on('click', function(){
+            $("nav ul").toggle('slow');
+        })
+        $(".nav-collapse").on('click', function(){
+           $("nav ul").toggle();
+        }),
+        $(window).resize(function(){
+            var ancho = $(this).width();
+            if(ancho > 600){
+                $("nav ul").show();
+            }else if(ancho <= 600){
+                $("nav ul").hide();
+            }
+        });
+    </script>
+</body><!-- Fin contenido GRID -->
+</html>
